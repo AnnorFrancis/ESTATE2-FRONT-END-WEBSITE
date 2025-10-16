@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>ANN Estate — Properties</title>
+    <link rel="stylesheet" href="properties.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="inner container">
+        <div class="brand">
+          <span class="badge">ANN</span><span>Estate</span>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn cart-btn" href="#" id="cartBtn">
+          <span class="cart-icon">🛒</span>
+          <span id="cartCount">0</span> My Property
+        </a>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="content container">
+        <h1>Property <span>Listings</span></h1>
+        <p>Browse our extensive collection of premium properties.</p>
+      </div>
+    </header>
+
+    <section>
+      <div class="welcome">
+        <h1><span>WELCOME TO ANN'S PROPERTIES LIST</span></h1>
+      </div>
+    </section>
+
+    <!-- Designer Filter Panel -->
+    <section class="filter-panel container">
+      <form id="propertyFilterForm">
+        <div class="filter-row">
+          <input
+            type="text"
+            class="filter-input"
+            name="location"
+            placeholder="Location"
+          />
+          <select class="filter-input" name="type">
+            <option value="">Type</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Villa">Villa</option>
+            <option value="Townhouse">Townhouse</option>
+            <option value="Penthouse">Penthouse</option>
+            <option value="Beach House">Beach House</option>
+          </select>
+          <select class="filter-input" name="bedrooms">
+            <option value="">Bedrooms</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5+</option>
+          </select>
+          <select class="filter-input" name="amenities">
+            <option value="">Amenities</option>
+            <option value="Pool">Pool</option>
+            <option value="Gym">Gym</option>
+            <option value="Garden">Garden</option>
+            <option value="Garage">Garage</option>
+            <option value="Security">Security</option>
+            <option value="Smart Home">Smart Home</option>
+            <option value="Solar">Solar</option>
+          </select>
+          <input
+            type="number"
+            class="filter-input"
+            name="minPrice"
+            placeholder="Min Price"
+            min="0"
+          />
+          <input
+            type="number"
+            class="filter-input"
+            name="maxPrice"
+            placeholder="Max Price"
+            min="0"
+          />
+          <button type="submit" class="filter-btn">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section container">
+      <div class="cards">
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L1.jpg" alt="" />
+          <div class="body">
+            <h3 class="price">$2,850,000</h3>
+            <div class="meta">
+              <span>3 Beds</span><span>2 Baths</span><span>1900 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Pool</span><span class="pill">Garage</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Manhattan, NY</li>
+              <li data-label="Year Built">2015</li>
+              <li data-label="Type">Apartment</li>
+              <li data-label="Parking">1 space</li>
+              <li data-label="Amenities">Pool, Gym, Security</li>
+              <li data-label="Description">
+                Modern apartment with skyline views.
+              </li>
+              <li data-label="Agent">John Doe, +1 (555) 123-4567</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/l2.jpg" alt="" />
+          <div class="body">
+            <h3 class="price">$3,250,000</h3>
+            <div class="meta">
+              <span>3 Beds</span><span>2 Baths</span><span>2000 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Garden</span
+              ><span class="pill">Renovated</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Brooklyn, NY</li>
+              <li data-label="Year Built">2018</li>
+              <li data-label="Type">Townhouse</li>
+              <li data-label="Parking">2 spaces</li>
+              <li data-label="Amenities">Garden, Security</li>
+              <li data-label="Description">
+                Spacious townhouse with private garden.
+              </li>
+              <li data-label="Agent">Jane Smith, +1 (555) 987-6543</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L4.jpg" alt="" />
+          <div class="body">
+            <h3 class="price">$4,675,000</h3>
+            <div class="meta">
+              <span>3 Beds</span><span>2 Baths</span><span>2100 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Feature A</span
+              ><span class="pill">Feature B</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Queens, NY</li>
+              <li data-label="Year Built">2012</li>
+              <li data-label="Type">Villa</li>
+              <li data-label="Parking">2 spaces</li>
+              <li data-label="Amenities">Garden, Security</li>
+              <li data-label="Description">Cozy villa with large backyard.</li>
+              <li data-label="Agent">Alex Lee, +1 (555) 222-3333</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L5.webp" alt="" />
+          <div class="body">
+            <h3 class="price">$2,450,000</h3>
+            <div>Sample Listing 4</div>
+            <div class="meta">
+              <span>8 Beds</span><span>9 Baths</span><span>2200 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Feature A</span
+              ><span class="pill">Feature B</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Staten Island, NY</li>
+              <li data-label="Year Built">2020</li>
+              <li data-label="Type">Penthouse</li>
+              <li data-label="Parking">3 spaces</li>
+              <li data-label="Amenities">Pool, Gym, Security</li>
+              <li data-label="Description">
+                Luxury penthouse with panoramic views.
+              </li>
+              <li data-label="Agent">Maria Gomez, +1 (555) 444-5555</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L6.webp" alt="" />
+          <div class="body">
+            <h3 class="price">$2,850,000</h3>
+            <div>Sample Listing 5</div>
+            <div class="meta">
+              <span>5 Beds</span><span>6 Baths</span><span>2300 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Feature A</span
+              ><span class="pill">Feature B</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Bronx, NY</li>
+              <li data-label="Year Built">2017</li>
+              <li data-label="Type">Townhouse</li>
+              <li data-label="Parking">1 space</li>
+              <li data-label="Amenities">Gym, Security</li>
+              <li data-label="Description">
+                Elegant townhouse with modern amenities.
+              </li>
+              <li data-label="Agent">Chris Park, +1 (555) 666-7777</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L7.webp" alt="" />
+          <div class="body">
+            <h3 class="price">$3,200,000</h3>
+            <div>Sample Listing 6</div>
+            <div class="meta">
+              <span>4 Beds</span><span>5 Baths</span><span>2400 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Feature A</span
+              ><span class="pill">Feature B</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Harlem, NY</li>
+              <li data-label="Year Built">2019</li>
+              <li data-label="Type">Villa</li>
+              <li data-label="Parking">2 spaces</li>
+              <li data-label="Amenities">Pool, Garden</li>
+              <li data-label="Description">Spacious villa with luxury pool.</li>
+              <li data-label="Agent">Linda Tran, +1 (555) 888-9999</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L8.webp" alt="" />
+          <div class="body">
+            <h3 class="price">$3,950,000</h3>
+            <div>Sample Listing 7</div>
+            <div class="meta">
+              <span>5 Beds</span><span>6 Baths</span><span>4500 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Pool</span><span class="pill">Garage</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Chelsea, NY</li>
+              <li data-label="Year Built">2016</li>
+              <li data-label="Type">Apartment</li>
+              <li data-label="Parking">1 space</li>
+              <li data-label="Amenities">Pool, Garage</li>
+              <li data-label="Description">Bright apartment near the park.</li>
+              <li data-label="Agent">Sam Patel, +1 (555) 101-2020</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L9.webp" alt="" />
+          <div class="body">
+            <h3 class="price">$5,100,000</h3>
+            <div>Sample Listing 8</div>
+            <div class="meta">
+              <span>6 Beds</span><span>7 Baths</span><span>5,800 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Garden</span
+              ><span class="pill">Renovated</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">SoHo, NY</li>
+              <li data-label="Year Built">2014</li>
+              <li data-label="Type">Apartment</li>
+              <li data-label="Parking">None</li>
+              <li data-label="Amenities">Garden, Renovated</li>
+              <li data-label="Description">
+                Chic apartment with designer finishes.
+              </li>
+              <li data-label="Agent">Olivia Kim, +1 (555) 303-4040</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/Coastal Beach House1.jpg" alt="" />
+          <div class="body">
+            <h3 class="price">$8,800,000</h3>
+            <div>Sample Listing 9</div>
+            <div class="meta">
+              <span>5 Beds</span><span>4 Baths</span><span>9,500 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Penthouse</span
+              ><span class="pill">City View</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Upper East Side, NY</li>
+              <li data-label="Year Built">2021</li>
+              <li data-label="Type">Beach House</li>
+              <li data-label="Parking">4 spaces</li>
+              <li data-label="Amenities">Beach Access, City View</li>
+              <li data-label="Description">
+                Coastal beach house with private access.
+              </li>
+              <li data-label="Agent">Ethan Brown, +1 (555) 505-6060</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L10.jpg" alt="" />
+          <div class="body">
+            <h3 class="price">$6,720,000</h3>
+            <div>Sample Listing 10</div>
+            <div class="meta">
+              <span>6 Beds</span><span>8 Baths</span><span>6,600 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Near Park</span
+              ><span class="pill">Modern</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Greenwich Village, NY</li>
+              <li data-label="Year Built">2013</li>
+              <li data-label="Type">Apartment</li>
+              <li data-label="Parking">2 spaces</li>
+              <li data-label="Amenities">Park Nearby, Modern</li>
+              <li data-label="Description">
+                Modern apartment close to the park.
+              </li>
+              <li data-label="Agent">Nina Singh, +1 (555) 707-8080</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L11.jpg" alt="" />
+          <div class="body">
+            <h3 class="price">$7,600,000</h3>
+            <div>Sample Listing 11</div>
+            <div class="meta">
+              <span>7 Beds</span><span>9 Baths</span><span>7800 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Smart Home</span
+              ><span class="pill">Solar</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Tribeca, NY</li>
+              <li data-label="Year Built">2018</li>
+              <li data-label="Type">Townhouse</li>
+              <li data-label="Parking">2 spaces</li>
+              <li data-label="Amenities">Smart Home, Solar</li>
+              <li data-label="Description">
+                Eco-friendly townhouse with solar panels.
+              </li>
+              <li data-label="Agent">Paul White, +1 (555) 909-1010</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+        <article class="card">
+          <button class="favorite-btn" aria-label="Favorite">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              ></path>
+            </svg>
+          </button>
+          <img src="assets/L12.png" alt="" />
+          <div class="body">
+            <h3 class="price">$1,600,000</h3>
+            <div>Sample Listing 12</div>
+            <div class="meta">
+              <span>4 Beds</span><span>3 Baths</span><span>2800 sqft</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Smart Home</span
+              ><span class="pill">Solar</span>
+            </div>
+            <ul class="extra-details" style="display: none">
+              <li data-label="Location">Midtown, NY</li>
+              <li data-label="Year Built">2015</li>
+              <li data-label="Type">Apartment</li>
+              <li data-label="Parking">1 space</li>
+              <li data-label="Amenities">Smart Home, Solar</li>
+              <li data-label="Description">
+                Modern apartment with smart features.
+              </li>
+              <li data-label="Agent">Emma Green, +1 (555) 111-1212</li>
+            </ul>
+            <button class="quick-view-btn">Quick View</button>
+            <button class="select-btn">Select</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Modal for Quick View -->
+    <div class="modal" id="quickViewModal">
+      <div class="modal-content">
+        <button class="close-modal" id="closeModalBtn">&times;</button>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+    <!-- Cart Side Panel -->
+    <div class="cart-side-panel" id="cartSidePanel">
+      <div class="cart-panel-content">
+        <button class="close-cart-panel" id="closeCartPanelBtn">&times;</button>
+        <h2>My Selected Properties</h2>
+        <div id="cartProperties"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <div class="logo">
+              <span class="badge">ANN</span><strong>Estate</strong>
+            </div>
+            <p>
+              Your trusted partner in premium real estate. We specialize in
+              luxury properties, investment opportunities, and exceptional
+              client service.
+            </p>
+            <p>123 Real Estate Blvd, New York, NY 10001</p>
+            <p>+1 (555) 123-4567 • info@perksestate.com</p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <p><a href="properties.html">Properties</a></p>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="agents.html">Agents</a></p>
+            <p><a href="contact.html">Contact</a></p>
+          </div>
+          <div>
+            <h4>Our Services</h4>
+            <p>Property Sales</p>
+            <p>Property Rentals</p>
+            <p>Investment Consulting</p>
+            <p>Market Analysis</p>
+            <p>Legal Assistance</p>
+          </div>
+        </div>
+        <hr class="sep" />
+        <div class="copy">
+          <div>© 2025 ANN Estate. All rights reserved.</div>
+          <div>Built with vanilla HTML, CSS, and JS.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

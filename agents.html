@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>PERKS Estate — Agents</title>
+    <link rel="stylesheet" href="agents.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="inner container">
+        <div class="brand">
+          <span class="badge">ANN</span><span>Estate</span>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn cart-btn" href="#" id="cartBtn">
+          <span class="cart-icon">🛒</span>
+          <span id="cartCount">0</span> My Property
+        </a>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="content container">
+        <h1>Meet Our <span>Agents</span></h1>
+        <p>Experienced professionals ready to help you.</p>
+      </div>
+    </header>
+    <section class="section container">
+      <div class="search-row">
+        <input
+          id="agentSearch"
+          placeholder="Search agents by name or speciality"
+        />
+        <select id="agentLang">
+          <option value="">Any Language</option>
+          <option>English</option>
+          <option>Spanish</option>
+          <option>Mandarin</option>
+          <option>Portuguese</option>
+        </select>
+        <select id="agentSpecialty">
+          <option value="">Any Specialty</option>
+          <option>Luxury Specialist</option>
+          <option>Penthouse Sales</option>
+          <option>Family Homes</option>
+        </select>
+        <button id="agentFilterBtn" class="btn">Filter</button>
+      </div>
+
+      <div class="cards" id="agentsList">
+        <article
+          class="card"
+          data-name="Sarah Johnson"
+          data-specialty="Luxury Specialist"
+          data-languages="English,Spanish"
+          data-phone="+1 (555) 222-0101"
+          data-email="sarah@perksestate.com"
+        >
+          <img src="assets/agents1.webp" />
+          <div class="body">
+            <strong>Sarah Johnson</strong>
+            <div class="meta">
+              <span>Luxury Specialist</span><span>English, Spanish</span>
+            </div>
+            <div class="badges"><span class="pill">Top Agent</span></div>
+            <div class="agent-actions">
+              <button class="contact-btn" data-agent="Sarah Johnson">
+                Contact
+              </button>
+              <a
+                class="contact-btn secondary"
+                href="mailto:sarah@perksestate.com"
+                >Email</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="card"
+          data-name="Michael Chen"
+          data-specialty="Penthouse Sales"
+          data-languages="English,Mandarin"
+          data-phone="+1 (555) 333-0202"
+          data-email="michael@perksestate.com"
+        >
+          <img src="assets/agents3.png" />
+          <div class="body">
+            <strong>Michael Chen</strong>
+            <div class="meta">
+              <span>Penthouse Sales</span><span>English, Mandarin</span>
+            </div>
+            <div class="badges"><span class="pill">Experienced</span></div>
+            <div class="agent-actions">
+              <button class="contact-btn" data-agent="Michael Chen">
+                Contact
+              </button>
+              <a
+                class="contact-btn secondary"
+                href="mailto:michael@perksestate.com"
+                >Email</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="card"
+          data-name="Emily Rodriguez"
+          data-specialty="Family Homes"
+          data-languages="English,Portuguese"
+          data-phone="+1 (555) 444-0303"
+          data-email="emily@perksestate.com"
+        >
+          <img src="assets/agents2.jpg" />
+          <div class="body">
+            <strong>Emily Rodriguez</strong>
+            <div class="meta">
+              <span>Family Homes</span><span>English, Portuguese</span>
+            </div>
+            <div class="badges"><span class="pill">Trusted</span></div>
+            <div class="agent-actions">
+              <button class="contact-btn" data-agent="Emily Rodriguez">
+                Contact
+              </button>
+              <a
+                class="contact-btn secondary"
+                href="mailto:emily@perksestate.com"
+                >Email</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="card"
+          data-name="David Kim"
+          data-specialty="Commercial"
+          data-languages="English,Korean"
+          data-phone="+1 (555) 555-0404"
+          data-email="david@perksestate.com"
+        >
+          <img src="assets/agents7.webp" />
+          <div class="body">
+            <strong>David Kim</strong>
+            <div class="meta">
+              <span>Commercial</span><span>English, Korean</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Commercial Expert</span>
+            </div>
+            <div class="agent-actions">
+              <button class="contact-btn" data-agent="David Kim">
+                Contact
+              </button>
+              <a
+                class="contact-btn secondary"
+                href="mailto:david@perksestate.com"
+                >Email</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="card"
+          data-name="Aisha Hassan"
+          data-specialty="Investment"
+          data-languages="English,Arabic"
+          data-phone="+1 (555) 666-0505"
+          data-email="aisha@perksestate.com"
+        >
+          <img src="assets/agents8.jpg" />
+          <div class="body">
+            <strong>Aisha Hassan</strong>
+            <div class="meta">
+              <span>Investment</span><span>English, Arabic</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Investor Relations</span>
+            </div>
+            <div class="agent-actions">
+              <button class="contact-btn" data-agent="Aisha Hassan">
+                Contact
+              </button>
+              <a
+                class="contact-btn secondary"
+                href="mailto:aisha@perksestate.com"
+                >Email</a
+              >
+            </div>
+          </div>
+        </article>
+        <article
+          class="card"
+          data-name="Liam O'Connor"
+          data-specialty="New Developments"
+          data-languages="English,Irish"
+          data-phone="+1 (555) 777-0606"
+          data-email="liam@perksestate.com"
+        >
+          <img src="assets/agents6.jpg" />
+          <div class="body">
+            <strong>Liam O'Connor</strong>
+            <div class="meta">
+              <span>New Developments</span><span>English, Irish</span>
+            </div>
+            <div class="badges">
+              <span class="pill">Developer Liaison</span>
+            </div>
+            <div class="agent-actions">
+              <button class="contact-btn" data-agent="Liam O'Connor">
+                Contact
+              </button>
+              <a
+                class="contact-btn secondary"
+                href="mailto:liam@perksestate.com"
+                >Email</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Agent Contact Modal -->
+    <div class="agent-modal" id="agentContactModal">
+      <div class="modal-content">
+        <button class="close" id="closeAgentModal">&times;</button>
+        <h3 id="agentModalName">Contact Agent</h3>
+        <p id="agentModalInfo"></p>
+        <form id="agentContactForm">
+          <input
+            type="text"
+            id="visitorName"
+            placeholder="Your name"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin: 8px 0;
+              border-radius: 8px;
+              border: 1px solid #e5e7eb;
+            "
+          />
+          <input
+            type="email"
+            id="visitorEmail"
+            placeholder="Your email"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin: 8px 0;
+              border-radius: 8px;
+              border: 1px solid #e5e7eb;
+            "
+          />
+          <textarea
+            id="visitorMessage"
+            placeholder="Your message"
+            rows="4"
+            style="
+              width: 100%;
+              padding: 10px;
+              margin: 8px 0;
+              border-radius: 8px;
+              border: 1px solid #e5e7eb;
+            "
+          ></textarea>
+          <div
+            style="
+              display: flex;
+              gap: 8px;
+              justify-content: flex-end;
+              margin-top: 8px;
+            "
+          >
+            <button
+              type="button"
+              class="contact-btn secondary"
+              id="agentContactCancel"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="contact-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Cart Side Panel -->
+    <div class="cart-side-panel" id="cartSidePanel">
+      <div class="cart-panel-content">
+        <button class="close-cart-panel" id="closeCartPanelBtn">&times;</button>
+        <h2>My Selected Properties</h2>
+        <div id="cartProperties"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <div class="logo">
+              <span class="badge">ANN</span><strong>Estate</strong>
+            </div>
+            <p>
+              Your trusted partner in premium real estate. We specialize in
+              luxury properties, investment opportunities, and exceptional
+              client service.
+            </p>
+            <p>123 Real Estate Blvd, New York, NY 10001</p>
+            <p>+1 (555) 123-4567 • info@perksestate.com</p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <p><a href="properties.html">Properties</a></p>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="agents.html">Agents</a></p>
+            <p><a href="contact.html">Contact</a></p>
+          </div>
+          <div>
+            <h4>Our Services</h4>
+            <p>Property Sales</p>
+            <p>Property Rentals</p>
+            <p>Investment Consulting</p>
+            <p>Market Analysis</p>
+            <p>Legal Assistance</p>
+          </div>
+        </div>
+        <hr class="sep" />
+        <div class="copy">
+          <div>© 2025 ANN Estate. All rights reserved.</div>
+          <div>Built with vanilla HTML, CSS, and JS.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
