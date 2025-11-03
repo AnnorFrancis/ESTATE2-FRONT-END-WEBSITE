@@ -122,15 +122,80 @@ img {
   gap: 28px;
   align-items: start;
 }
+
+.mission-sec {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 10px auto;
+  border-radius: 38px;
+  width: 400px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid blue;
+  font-size: 28px;
+  border-width: 5px;
+  box-shadow: 2px 2px 8px blue;
+}
+
+.mission-sec h2 span {
+  position: absolute;
+  white-space: nowrap;
+  animation: slide 7s linear infinite;
+  color: blue;
+  font-size: 28px;
+  font-weight: bold;
+  left: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.mission-grid p {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+  text-align: justify;
+  align-items: center;
+}
+
 .mission-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
   margin-top: 12px;
   padding-left: 18px;
+  width: 100%;
 }
 .stats-cards {
   display: flex;
   gap: 12px;
   flex-direction: column;
 }
+.m1,
+.m2,
+.m3 {
+  border: 2px solid lightblue;
+  border-radius: 60px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px blue;
+  background-color: #f0f8ff;
+  margin-bottom: 10px;
+}
+
 .stat {
   background: #fff;
   padding: 18px;
