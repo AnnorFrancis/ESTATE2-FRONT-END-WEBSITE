@@ -87,228 +87,123 @@ img {
   border: 2px solid var(--brand-2);
 }
 
-.about-hero {
-  padding: 60px 0 30px;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 520px;
-  gap: 40px;
-  align-items: center;
-}
-.hero-text h1 {
-  margin: 0 0 12px;
-  font-size: 44px;
-  line-height: 1.05;
-  color: #0f172a;
-}
-.lead {
-  font-size: 18px;
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-.hero-image img {
-  border-radius: 18px;
-  height: 340px;
-  object-fit: cover;
-}
+/* CONTACTS */
 
-.mission {
-  padding-top: 30px;
-}
-.mission-grid {
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 28px;
-  align-items: start;
-}
-
-.mission-sec {
-  display: flex;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  color: white;
+/* Contact-Hero Section */
+.contact-hero {
+  background-color: #faf3f0;
+  padding: 80px 20px;
   text-align: center;
-  padding-bottom: 30px;
-  margin: 10px auto;
-  border-radius: 38px;
-  width: 400px;
-  height: 50px;
-  position: relative;
-  overflow: hidden;
-  border: 4px solid blue;
-  font-size: 28px;
-  border-width: 5px;
-  box-shadow: 2px 2px 8px blue;
 }
 
-.mission-sec h2 span {
-  position: absolute;
-  white-space: nowrap;
-  animation: slide 7s linear infinite;
-  color: blue;
-  font-size: 28px;
-  font-weight: bold;
-  left: 0;
+.contact-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #c0392b;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
-@keyframes slide {
+.contact-hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Form Section */
+.contact {
+  text-align: center;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  padding: 50px;
+  /* border-radius: 700px; */
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  align-self: center;
+  margin: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.contacts input,
+.contacts textarea {
+  display: block;
+  width: 100%; /* Makes all inputs take full width */
+  max-width: 400px; /* Optional: Limits the width so it's not too wide */
+  margin-bottom: 15px; /* Space between fields */
+  padding: 10px;
+  box-sizing: border-box; /* Keeps padding inside the width */
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
   0% {
-    left: -100%;
+    transform: translateX(-100%) rotate(45deg);
   }
   100% {
-    left: 100%;
+    transform: translateX(100%) rotate(45deg);
   }
 }
 
-.mission-grid p {
-  font-size: 18px;
-  color: var(--muted);
-  line-height: 1.6;
-  text-align: justify;
-  align-items: center;
+.contact h2 {
+  margin-top: 0;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
-.mission-list {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin-top: 12px;
-  padding-left: 18px;
-  width: 100%;
-}
-.stats-cards {
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-}
-.m1,
-.m2,
-.m3 {
-  border: 2px solid lightblue;
-  border-radius: 60px;
-  padding: 10px;
-  box-shadow: 2px 2px 8px blue;
-  background-color: #f0f8ff;
+.contact p {
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
-.stat {
-  background: #fff;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  text-align: center;
-}
-.stat-number {
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--brand-2);
-}
-.stat-label {
-  color: var(--muted);
+.contact button {
+  background: #ffffff;
+  color: gray;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px;
+  transition: background 0.3s, color 0.3s;
 }
 
-.section-title {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 32px;
-  margin: 0;
-  color: var(--text);
-  text-align: center;
-  justify-content: center;
-}
-
-.timeline {
-  padding: 10px;
-}
-.timeline-list {
-  list-style: none;
-  padding: 0;
-  margin: 18px 0 0 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-.timeline-list li {
-  background: lightskyblue;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-}
-
-.team {
-  text-align: center;
-}
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-  margin-top: 18px;
-}
-.team-card {
-  background: #fff;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-}
-.team-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-.team-card h4 {
-  margin: 12px 0 4px;
-}
-.role {
-  margin: 0 0 8px;
-  color: var(--muted);
-  font-weight: 700;
-}
-
-.values {
-  margin-top: 8px;
-}
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 18px;
-  margin-top: 14px;
-}
-.value {
-  background: #fff;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  text-align: center;
-}
-.value h4 {
-  margin: 10px 0 6px;
-}
-
-.cta {
-  padding-bottom: 0;
-}
-.cta-panel {
-  background: linear-gradient(
-    90deg,
-    rgba(37, 99, 235, 0.08),
-    rgba(29, 78, 216, 0.06)
-  );
-  padding: 24px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-.cta-actions a {
-  margin-left: 8px;
+.contact button:hover {
+  background: black;
+  color: #ffffff;
 }
 
 /* Footer shared styles kept from project - keep consistent */
